@@ -214,6 +214,7 @@ vendor.display.qdcm.mode_combine=2
 vendor.display.use_layer_ext=0
 vendor.display.use_smooth_motion=0
 vendor.gralloc.disable_ubwc=0
+vendor.display.idle_time=1100
 
 # Haptics
 vendor.vibrator.hal.duration.tick=30
