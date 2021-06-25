@@ -3,6 +3,7 @@ dalvik.vm.dex2oat-filter=everything
 dalvik.vm.image-dex2oat-filter=everything
 
 # Bluetooth
+persist.vendor.btstack.enable.twsplus=true
 vendor.bluetooth.soc=hastings
 
 # Charger
