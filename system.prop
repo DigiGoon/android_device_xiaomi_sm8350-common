@@ -3,6 +3,8 @@ dalvik.vm.dex2oat-filter=everything
 dalvik.vm.image-dex2oat-filter=everything
 
 # Bluetooth
+persist.vendor.btstack.enable.twsplus=true
+persist.vendor.btstack.enable.twsplussho=true
 ro.bluetooth.library_name=libbluetooth_qti.so
 persist.vendor.btstack.enable.lpa=true
 vendor.bluetooth.soc=hastings
