@@ -9,3 +9,6 @@ on property:vendor.post_boot.parsed=1
 # IRQ 275: kgsl_3d0_irq
 write /proc/irq/278/smp_affinity_list 2
 write /proc/irq/275/smp_affinity_list 1
+
+# CPU Boost
+write /sys/devices/system/cpu/cpu_boost/input_boost_ms 200
