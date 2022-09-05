@@ -142,6 +142,10 @@ vendor/lib64/libtinyxml2_1.so|11ceb3f1e7650c41621d47e5ec5567c8f466086e
 # Display HDR - from tundra S3SJS32.1-86-1-4
 vendor/lib64/libhdr_tm.so|7954c5cd5c0b23fe8d0609361c22d24c59f1448b
 
+# Display gralloc - from LA.UM.9.14.r1-19300.01-LAHAINA.QSSI12.0
+vendor/lib64/libgralloccore.so|3f9a1e2d36a9221b078927327c328bfa3185d973
+vendor/lib64/libgrallocutils.so|0bafbd7b7de5f267c4f5836acb4be174b2870ccd
+
 # Display postprocessing
 vendor/bin/hw/vendor.display.color@1.0-service
 vendor/bin/ppd
