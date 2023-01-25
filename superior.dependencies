@@ -1,0 +1,26 @@
+[
+  {
+    "repository" : "LineageOS/android_kernel_xiaomi_sm8350",
+    "target_path": "kernel/xiaomi/sm8350",
+    "remote"     : "github",
+    "branch"     : "lineage-19.1"
+  },
+  {
+   "repository"  : "LineageOS/android_hardware_xiaomi",
+   "target_path" : "hardware/xiaomi",
+   "remote"      : "github",
+   "branch"      : "lineage-20"
+  },
+  {
+   "repository"  : "DigiGoon/proprietary_vendor_xiaomi_haydn",
+   "target_path" : "vendor/xiaomi/haydn",
+   "remote"      : "gitlab-ssh",
+   "branch"      : "los-20"
+  },
+  {
+   "repository"  : "DigiGoon/proprietary_vendor_xiaomi_sm8350-common",
+   "target_path" : "vendor/xiaomi/sm8350-common",
+   "remote"      : "gitlab-ssh",
+   "branch"      : "los-20"
+  }
+]
