@@ -1,2 +1,5 @@
 # Thermal
 vendor_public_prop(vendor_thermal_normal_prop);
+
+# Aware
+vendor_restricted_prop(vendor_aware_available_prop);
