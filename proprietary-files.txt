@@ -340,6 +340,9 @@ product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
+# IFAA Service
+-vendor/app/IFAAService/IFAAService.apk:vendor/app/IFAAServiceXiaomism8350/IFAAServiceXiaomism8350.apk
+
 # IMS
 system_ext/lib64/lib-imsvideocodec.so
 system_ext/lib64/lib-imsvt.so
