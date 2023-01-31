@@ -1,0 +1,2 @@
+# allow system_server to access vendor camera property.
+get_prop(system_server, vendor_camera_prop)
