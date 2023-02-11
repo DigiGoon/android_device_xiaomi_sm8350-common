@@ -112,6 +112,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_allow_transfer_ims_call_bool" value="true" />
         <boolean name="dtmf_type_enabled_bool" value="true" />
         <boolean name="csp_enabled_bool" value="true" />
+        <!-- Allow VoLTE and WFC by default -->
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
     </carrier_config>
 
     <carrier_config mcc="001" mnc="01">
