@@ -190,7 +190,7 @@ debug.sf.latch_unsignaled=0
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 ro.opengles.version=196610
-persist.sys.sf.native_mode=0
+persist.sys.sf.native_mode=258
 
 # Haptics
 vendor.vibrator.hal.duration.tick=30
