@@ -128,7 +128,6 @@ vendor/etc/display/DPU660.xml
 vendor/etc/display/DPU670.xml
 vendor/etc/display/DPU720.xml
 vendor/etc/display/DPU7__.xml
-vendor/etc/display/advanced_sf_offsets.xml
 vendor/etc/init/qdcmss.rc
 vendor/lib64/libdisplayqos.so
 vendor/lib64/libdisplayskuutils.so
@@ -146,6 +145,9 @@ vendor/lib64/libsdmextension.so
 vendor/lib64/libsnapdragoncolor-manager.so
 vendor/lib64/libsnapdragoncolor-qdcm.so
 vendor/lib64/libtinyxml2_1.so
+
+# Display calibration - from LA.UM.9.14.r1-19300.01-LAHAINA.QSSI12.0
+vendor/etc/display/advanced_sf_offsets.xml|e145a0c0f975f6d924fbe7f18f531ae044ec3bef
 
 # Display gralloc - from LA.UM.9.14.r1-19300.01-LAHAINA.QSSI12.0
 vendor/lib64/libgralloccore.so|3f9a1e2d36a9221b078927327c328bfa3185d973
