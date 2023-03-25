@@ -1,5 +1,6 @@
 # Miui Camera
 get_prop(platform_app, vendor_camera_sensor_prop);
+get_prop(platform_app, vendor_display_prop);
 get_prop(platform_app, vendor_fp_prop)
 
 allow platform_app vendor_sys_video_prop:file { read };
