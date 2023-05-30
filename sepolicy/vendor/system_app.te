@@ -13,3 +13,6 @@ allow system_app vendor_sysfs_graphics:file write;
 allow system_app vendor_sysfs_graphics:file setattr;
 allow system_app sysfs_dsi_display_primary:dir search;
 allow system_app sysfs_dsi_display_primary:file write;
+
+# Memory
+r_dir_file(system_app, proc_pagetypeinfo)
