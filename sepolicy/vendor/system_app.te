@@ -5,3 +5,6 @@ allow system_app proc_pagetypeinfo:file r_file_perms;
 
 # Battery Health
 r_dir_file(system_app, sysfs_battery_supply)
+
+# Memory
+r_dir_file(system_app, proc_pagetypeinfo)
