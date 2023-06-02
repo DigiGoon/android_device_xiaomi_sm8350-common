@@ -9,6 +9,13 @@ persist.vendor.sys.fp.info    u:object_r:vendor_fp_info_prop:s0
 persist.vendor.sys.fp.uid    u:object_r:vendor_fp_info_prop:s0
 ro.hardware.fp    u:object_r:vendor_fp_prop:s0
 
+# Mi Sound FX
+persist.vendor.audio.misound.disable        u:object_r:vendor_audio_prop:s0
+ro.vendor.audio.misound.bluetooth.enable    u:object_r:vendor_audio_prop:s0
+ro.vendor.audio.scenario.support            u:object_r:vendor_audio_prop:s0
+ro.vendor.audio.soundfx.type                u:object_r:vendor_audio_prop:s0
+ro.vendor.audio.soundfx.usb                 u:object_r:vendor_audio_prop:s0
+
 # Mlipay
 persist.vendor.sys.pay.                 u:object_r:vendor_mlipay_prop:s0
 persist.vendor.sys.provision.status     u:object_r:vendor_mlipay_prop:s0

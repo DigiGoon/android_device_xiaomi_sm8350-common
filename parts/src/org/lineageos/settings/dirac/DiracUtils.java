@@ -26,6 +26,7 @@ import android.media.AudioManager;
 import android.media.session.MediaController;
 import android.media.session.MediaSessionManager;
 import android.media.session.PlaybackState;
+import android.os.SystemProperties;
 import java.util.List;
 
 public class DiracUtils {
@@ -107,11 +108,14 @@ public class DiracUtils {
         }
     }
 
-    public void setEnabled(boolean enable) {
-        mDiracSound.setEnabled(enable);
-        mDiracSound.setMusic(enable ? 1 : 0);
+    protected void setEnabled(boolean enable) {
         if (enable) {
+            SystemProperties.set("persist.vendor.audio.misound.disable", "false");
+            mDiracSound.setMusic(1);
             refreshPlaybackIfNecessary();
+        } else {
+            mDiracSound.setMusic(0);
+            SystemProperties.set("persist.vendor.audio.misound.disable", "true");
         }
     }
 
