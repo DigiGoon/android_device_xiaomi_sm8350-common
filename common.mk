@@ -409,6 +409,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json \
     vendor/qcom/opensource/power/config/lahaina/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
 
+# Prebuilt packages
+PRODUCT_PACKAGES += \
+    MlkitBarcodeUIPrebuilt
+
 # QTI
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect.vendor
