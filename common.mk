@@ -411,7 +411,8 @@ PRODUCT_COPY_FILES += \
 
 # Prebuilt packages
 PRODUCT_PACKAGES += \
-    MlkitBarcodeUIPrebuilt
+    MlkitBarcodeUIPrebuilt \
+    VisionBarcodePrebuilt
 
 # QTI
 PRODUCT_PACKAGES += \
