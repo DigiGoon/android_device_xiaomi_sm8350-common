@@ -112,6 +112,9 @@ on post-fs-data
     mkdir /mnt/vendor/persist/goodix 0770 system system
 
 on early-boot
+    # Dolby
+    mkdir /data/vendor/dolby 0770 media media
+    mkdir /data/vendor/multimedia 0775 system system
     # Enable WLAN cold boot calibration
     write /sys/devices/platform/soc/b0000000.qcom,cnss-qca6490/fs_ready 1
 
