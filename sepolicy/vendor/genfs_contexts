@@ -56,3 +56,6 @@ genfscon sysfs /devices/platform/soc/soc:qcom,kgsl-hyp/subsys3/wakeup u:object_r
 genfscon sysfs /devices/platform/soc/soc:qcom,kgsl-hyp/subsys4/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,trustedvm@d0800000/subsys1/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,trustedvm@d0800000/subsys2/wakeup u:object_r:sysfs_wakeup:s0
+
+# Sensor
+genfscon sysfs /devices/virtual/touch/touch_dev/palm_sensor                                   u:object_r:vendor_sysfs_palm_sensor:s0
