@@ -8,6 +8,11 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="aidl">
+        <name>android.hardware.power</name>
+        <version>3</version>
+        <fqname>IPower/default</fqname>
+    </hal>
     <hal format="hidl">
         <name>vendor.xiaomi.hardware.campostproc</name>
         <transport>hwbinder</transport>

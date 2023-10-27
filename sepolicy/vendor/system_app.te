@@ -1,3 +1,5 @@
+type sysfs_battery_supply, sysfs_type, fs_type;
+
 # Aware
 get_prop(system_app, vendor_aware_available_prop);
 

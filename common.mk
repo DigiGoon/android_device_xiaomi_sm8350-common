@@ -23,6 +23,12 @@ $(call inherit-product, vendor/xiaomi/sm8350-common/sm8350-common-vendor.mk)
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH) \
+    vendor/omni/build/soong \
+    hardware/qcom-caf/sm8350
+
 # API
 PRODUCT_SHIPPING_API_LEVEL := 30
 
@@ -171,6 +177,14 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     hardware/qcom-caf/sm8350/display/config/snapdragon_color_libs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/snapdragon_color_libs_config.xml
+
+$(call inherit-product, hardware/qcom-caf/sm8350/media/product.mk)
+$(call inherit-product, hardware/qcom-caf/sm8350/display/config/display-board.mk)
+$(call inherit-product, hardware/qcom-caf/sm8350/display/config/display-product.mk)
+$(call inherit-product, vendor/qcom/opensource/display/config/display-product-vendor.mk)
+$(call inherit-product, vendor/qcom/opensource/commonsys/display_custom/config/display-product-commonsys.mk)
+$(call inherit-product, vendor/qcom/opensource/commonsys-intf/display/config/display-interfaces-product.mk)
+$(call inherit-product, vendor/qcom/opensource/commonsys-intf/display/config/display-product-system.mk)
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -407,7 +421,7 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-droidx
 
-PRODUCT_ENFORCE_RRO_TARGETS := *
+#PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
@@ -453,6 +467,7 @@ PRODUCT_PACKAGES += \
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.1-service.xiaomi-multihal \
+    android.frameworks.sensorservice@1.0 \
     vendor.qti.hardware.display.mapper@1.1.vendor
 
 PRODUCT_COPY_FILES += \
