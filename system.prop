@@ -46,3 +46,6 @@ persist.vendor.sensors.enable.mag_filter=true
 
 # WFD
 persist.debug.wfd.enable=1
+
+# Maintainer flag for Superior Extended
+ro.spos.maintainer=DigiGoon
