@@ -39,18 +39,6 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
-        <name>android.hardware.drm</name>
-        <version>1.4</version>
-        <interface>
-            <name>ICryptoFactory</name>
-            <instance>clearkey</instance>
-        </interface>
-        <interface>
-            <name>IDrmFactory</name>
-            <instance>clearkey</instance>
-        </interface>
-    </hal>
     <hal format="aidl" optional="true">
         <name>android.hardware.power</name>
         <version>3</version>
