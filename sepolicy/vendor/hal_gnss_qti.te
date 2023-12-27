@@ -1,5 +1,2 @@
-# xtra-daemon control
-get_prop(vendor_hal_gnss_qti, xtra_control_prop)
-
 # Allow gnss to read boot status prop
 get_prop(vendor_hal_gnss_qti, boot_status_prop)
