@@ -10,6 +10,10 @@ ro.charger.enable_suspend=true
 # CNE
 persist.vendor.cne.feature=1
 
+# Fling velocities
+ro.min.fling_velocity=160 
+ro.max.fling_velocity=20000
+
 # Graphics
 debug.sf.disable_backpressure=1
 debug.sf.enable_hwc_vds=1
