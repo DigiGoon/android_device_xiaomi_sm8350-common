@@ -81,7 +81,19 @@ function blob_fixup() {
         vendor/lib64/android.hardware.secure_element@1.0-impl.so)
             "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
             ;;
-         vendor/etc/init/vendor.qti.rmt_storage.rc)
+        vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc)
+            sed -i "s|writepid /dev/stune/foreground/tasks|task_profiles HighPerformance|g" "${2}"
+             ;;
+        vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc)
+            sed -i "s|writepid /dev/cpuset/foreground/tasks|task_profiles ProcessCapacityHigh|g" "${2}"
+             ;;
+        vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc)
+            sed -i "s|writepid /dev/stune/nnapi-hal/tasks|task_profiles NNApiHALPerformance|g" "${2}"
+             ;;
+        vendor/etc/init/vendor.qti.media.c2@1.0-service.rc)
+            sed -i "s|writepid /dev/cpuset/foreground/tasks|task_profiles ProcessCapacityHigh|g" "${2}"
+             ;;
+        vendor/etc/init/vendor.qti.rmt_storage.rc)
             sed -i "/shutdown critical/ i\  group system wakelock" "${2}"
             ;;
     esac
