@@ -162,6 +162,10 @@ on boot
     chown system system /sys/bus/platform/devices/soc:fingerprint_fpc/finger_irq
     chown system system /sys/bus/platform/devices/soc:fingerprint_fpc/power_cfg
 
+    # Pocket sensor
+    chown system system /sys/class/touch/touch_dev/palm_sensor
+    chmod 0664 /sys/class/touch/touch_dev/palm_sensor
+
 	# VPP tuning
 	chown system system /mnt/vendor/persist/vpp/tunings.txt
 	chmod 0666 /mnt/vendor/persist/vpp/tunings.txt
