@@ -235,7 +235,7 @@ SOONG_CONFIG_ufsbsg += ufsframework
 SOONG_CONFIG_ufsbsg_ufsframework := bsg
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2023-01-01
+VENDOR_SECURITY_PATCH := 2023-10-01
 
 # Sepolicy
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
