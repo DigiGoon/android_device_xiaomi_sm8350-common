@@ -78,6 +78,10 @@ function blob_fixup() {
             sed -ni '/ozoaudio/!p' "${2}"
             sed -ni '/dolby/!p' "${2}"
             ;;
+        vendor/bin/hw/vendor.xiaomi.hardware.vibratorfeature.service)
+            "${PATCHELF}" --replace-needed "android.hardware.vibrator-V1-ndk_platform.so" "android.hardware.vibrator-V1-ndk.so" "${2}"
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
+            ;;
         vendor/lib64/android.hardware.secure_element@1.0-impl.so)
             "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
             ;;
