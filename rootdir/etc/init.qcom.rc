@@ -343,5 +343,5 @@ service citsensor-hal-1-1 /vendor/bin/hw/vendor.xiaomi.hardware.citsensorservice
     override
     class late_start
     user system
-    group system input
+    group system input wakelock
     task_profiles ServiceCapacityLow
