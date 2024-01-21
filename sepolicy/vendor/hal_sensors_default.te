@@ -14,3 +14,7 @@ allow hal_sensors_default vendor_sysfs_palm_sensor:file rw_file_perms;
 
 hal_client_domain(hal_sensors_default, hal_audio)
 allow hal_sensors_default hal_audio_hwservice:hwservice_manager find;
+
+# Audio Data Files
+allow hal_sensors_default vendor_audio_data_file:dir {write add_name search};
+allow hal_sensors_default vendor_audio_data_file:file {read write create getattr append open};
