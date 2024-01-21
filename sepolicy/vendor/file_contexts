@@ -76,6 +76,7 @@
 # Vibrator Permissions
 /sys/class/leds/vibrator_aw8697(/.*)?                                                   u:object_r:sysfs_leds:s0
 /sys/class/leds/vibrator(/.*)?                                                          u:object_r:sysfs_leds:s0
+/sys/class/qcom-haptics(/.*)?                                                          u:object_r:sysfs_leds:s0
 
 # Xiaomi MAC
 /vendor/bin/nv_mac                             u:object_r:vendor_wcnss_service_exec:s0
