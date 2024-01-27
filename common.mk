@@ -255,7 +255,7 @@ PRODUCT_COPY_FILES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-aospa
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
@@ -265,14 +265,6 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Platform
 TARGET_BOARD_PLATFORM := lahaina
-
-# Power
-PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti \
-    android.hardware.power@1.2.vendor
-
-PRODUCT_COPY_FILES += \
-    vendor/qcom/opensource/power/config/lahaina/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
 
 # QC common
 TARGET_COMMON_QTI_COMPONENTS := \
