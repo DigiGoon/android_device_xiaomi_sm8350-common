@@ -223,7 +223,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 
 # Power
-TARGET_POWERHAL_MODE_EXT := $(COMMON_PATH)/power/power-mode.cpp
+TARGET_POWER_FEATURE_EXT_LIB := //$(COMMON_PATH):libpowerfeature_ext_xiaomi-sm8350
 
 # PowerShare
 TARGET_POWERSHARE_NODE := /sys/class/qcom-battery/reverse_chg_mode
