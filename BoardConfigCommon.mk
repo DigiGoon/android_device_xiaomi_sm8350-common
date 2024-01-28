@@ -40,6 +40,8 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := kryo385
 
+# Audio
+AUDIO_FEATURE_ENABLED_DS2_DOLBY_DAP := true
 
 # Bootloader
 TARGET_NO_BOOTLOADER := true
@@ -49,7 +51,8 @@ TARGET_SCREEN_DENSITY ?= 440
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
-    $(COMMON_PATH)/hidl/xiaomi_framework_compatibility_matrix.xml
+    $(COMMON_PATH)/hidl/xiaomi_framework_compatibility_matrix.xml \
+    $(COMMON_PATH)/hidl/vendor_framework_compatibility_matrix.xml
 
 DEVICE_MANIFEST_FILE += \
     $(COMMON_PATH)/hidl/manifest_lahaina.xml \
@@ -239,6 +242,7 @@ VENDOR_SECURITY_PATCH := 2024-04-01
 # Sepolicy
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/public
+BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/dolby
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
 # Verified Boot
