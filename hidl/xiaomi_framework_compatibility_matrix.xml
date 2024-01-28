@@ -65,6 +65,14 @@
        </interface>
    </hal>
    <hal format="aidl" optional="true">
+        <name>android.hardware.health</name>
+        <version>1-2</version>
+        <interface>
+            <name>IHealth</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+   <hal format="aidl" optional="true">
        <name>android.hardware.power</name>
        <version>3</version>
        <interface>
