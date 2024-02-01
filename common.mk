@@ -125,32 +125,6 @@ PRODUCT_COPY_FILES += \
 # DebugFS
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
-# Display
-PRODUCT_PACKAGES += \
-    android.hardware.graphics.mapper@3.0-impl-qti-display \
-    android.hardware.graphics.mapper@4.0-impl-qti-display \
-    android.hardware.memtrack@1.0-impl \
-    android.hardware.memtrack@1.0-service \
-    vendor.qti.hardware.display.allocator-service \
-    vendor.qti.hardware.display.composer-service \
-    vendor.qti.hardware.display.mapper@2.0.vendor \
-
-PRODUCT_PACKAGES += \
-    android.hardware.graphics.allocator@3.0.vendor \
-    vendor.display.config@1.15.vendor \
-    vendor.display.config@2.0.vendor
-
-PRODUCT_PACKAGES += \
-    libdisplayconfig.qti \
-    libdisplayconfig.system.qti \
-    libqdMetaData \
-    libqdMetaData.system \
-    libtinyxml \
-    memtrack.default
-
-PRODUCT_COPY_FILES += \
-    hardware/qcom-caf/sm8350/display/config/snapdragon_color_libs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/snapdragon_color_libs_config.xml
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey
@@ -205,12 +179,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml
-
-# Graphics
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml \
-    frameworks/native/data/etc/android.software.opengles.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.opengles.deqp.level.xml \
-    frameworks/native/data/etc/android.software.vulkan.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml
 
 # Health
 PRODUCT_PACKAGES += \
@@ -393,7 +361,9 @@ PRODUCT_COPY_FILES += \
 
 # QC common
 TARGET_COMMON_QTI_COMPONENTS := \
-    bt
+    adreno \
+    bt \
+    display
 
 # QTI
 PRODUCT_PACKAGES += \
@@ -407,10 +377,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.recovery.qcom.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.qcom.rc
 
-# RenderScript HAL
-PRODUCT_PACKAGES += \
-    android.hardware.renderscript@1.0-impl
-
 # RIL
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.6.vendor \
@@ -422,8 +388,7 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@2.1-service.xiaomi-multihal \
-    vendor.qti.hardware.display.mapper@1.1.vendor
+    android.hardware.sensors@2.1-service.xiaomi-multihal
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.accelerometer.xml \
@@ -464,10 +429,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.qti
 
-# Touchscreen
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
-
 # Ueventd
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/ueventd.rc
@@ -506,13 +467,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.verified_boot.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/android.software.verified_boot.xml \
     frameworks/native/data/etc/android.software.verified_boot.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.verified_boot.xml
-
-# Vulkan
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.vulkan.compute-0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.compute.xml \
-    frameworks/native/data/etc/android.software.vulkan.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml \
-    frameworks/native/data/etc/android.hardware.vulkan.level-1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.level.xml \
-    frameworks/native/data/etc/android.hardware.vulkan.version-1_1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.version.xml
 
 # WiFi
 PRODUCT_PACKAGES += \
