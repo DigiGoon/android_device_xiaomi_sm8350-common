@@ -1,2 +1,19 @@
-# Qcom
-ro.vendor.qti.va_odm.support=1
+# Audio
+aaudio.mmap_policy=1
+persist.vendor.audio.bcl.enabled=false
+persist.vendor.audio.speaker.prot.enable=false
+persist.vendor.audio.vbat.enabled=false
+ro.vendor.audio.sdk.fluencetype=fluence
+vendor.audio.adm.buffering.ms=6
+vendor.audio.feature.dynamic_ecns.enable=false
+vendor.audio.feature.power_mode.enable=false
+vendor.audio.feature.spkr_prot.enable=false
+vendor.audio.hal.output.suspend.supported=false
+vendor.audio.offload.buffer.size.kb=256
+vendor.audio.offload.track.enable=false
+
+# Graphics
+persist.sys.sf.color_mode=9
+persist.sys.sf.native_mode=2
+ro.surface_flinger.set_touch_timer_ms?=200
+ro.surface_flinger.use_content_detection_for_refresh_rate?=true
