@@ -240,6 +240,7 @@ TARGET_BOARD_PLATFORM := lahaina
 # QC common
 TARGET_COMMON_QTI_COMPONENTS := \
     adreno \
+    alarm \
     av \
     bt \
     display \
