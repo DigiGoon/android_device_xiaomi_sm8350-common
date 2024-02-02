@@ -173,11 +173,11 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3.vendor
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-aospa
-
-PRODUCT_ENFORCE_RRO_TARGETS := *
+PRODUCT_PACKAGES += \
+    XiaomiSM8350FrameworksAOSPAOverlay \
+    XiaomiSM8350FrameworksOverlay \
+    XiaomiSM8350SettingsOverlay \
+    XiaomiSM8350SystemUIOverlay
 
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
@@ -198,6 +198,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     init \
     media \
     nfc \
+    overlay \
     perf \
     telephony \
     usb \
