@@ -143,6 +143,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.mi_thermald.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mi_thermald.rc \
     $(LOCAL_PATH)/rootdir/etc/init.qti.media.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.media.rc \
     $(LOCAL_PATH)/rootdir/etc/init.target.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.target.rc \
+    $(LOCAL_PATH)/rootdir/etc/init.xiaomi-sm8350.perf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.xiaomi-sm8350.perf.rc \
     $(LOCAL_PATH)/rootdir/etc/init.xiaomi-sm8350.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.xiaomi-sm8350.rc
 
 # IFAA manager
@@ -194,6 +195,10 @@ PRODUCT_PACKAGES += \
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
+# Perf
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/perf/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
 
 # Platform
 TARGET_BOARD_PLATFORM := lahaina
