@@ -48,10 +48,10 @@ TARGET_NO_BOOTLOADER := true
 TARGET_SCREEN_DENSITY ?= 440
 
 # HIDL
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     $(COMMON_PATH)/hidl/xiaomi_framework_compatibility_matrix.xml
 
-DEVICE_MANIFEST_FILE := \
+DEVICE_MANIFEST_FILE += \
     $(COMMON_PATH)/hidl/manifest_lahaina.xml \
     $(COMMON_PATH)/hidl/manifest_xiaomi.xml
 
