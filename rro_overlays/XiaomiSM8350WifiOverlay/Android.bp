@@ -1,6 +1,0 @@
-runtime_resource_overlay {
-    name: "XiaomiSM8350WifiOverlay",
-    theme: "XiaomiSM8350WifiOverlay",
-    sdk_version: "current",
-    device_specific: true
-}
