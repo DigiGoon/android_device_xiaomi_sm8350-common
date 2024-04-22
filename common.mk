@@ -184,10 +184,12 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    XiaomiSM8350CarrierConfigOverlay \
     XiaomiSM8350FrameworksAOSPAOverlay \
     XiaomiSM8350FrameworksOverlay \
     XiaomiSM8350SettingsOverlay \
-    XiaomiSM8350SystemUIOverlay
+    XiaomiSM8350SystemUIOverlay \
+    XiaomiSM8350WifiOverlay
 
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
@@ -217,7 +219,6 @@ TARGET_COMMON_QTI_COMPONENTS := \
 
 # RIL
 PRODUCT_PACKAGES += \
-    CarrierConfigOverlay
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -271,7 +272,6 @@ PRODUCT_COPY_FILES += \
 
 # WiFi
 PRODUCT_PACKAGES += \
-    WifiOverlay
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
