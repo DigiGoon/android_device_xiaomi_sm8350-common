@@ -1,0 +1,4 @@
+runtime_resource_overlay {
+    name: "XiaomiSM8350FrameworksAOSPAOverlay",
+    product_specific: true,
+}
