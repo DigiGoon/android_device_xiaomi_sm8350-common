@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from haydn V14.0.3.0.TKKMIXM
+# All unpinned blobs below are extracted from haydn V816.0.1.0.UKKCNXM - miui_HAYDN_OS1.0.1.0.UKKCNXM
 
 # ADSP
 vendor/bin/adsprpcd
@@ -171,11 +171,11 @@ vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so
 vendor/lib64/vendor.qti.esepowermanager@1.0.so
 vendor/lib64/vendor.qti.esepowermanager@1.1.so
 
-# HotwordEnrollment
-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk
-product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk
-system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
-system_ext/framework/com.android.hotwordenrollment.common.util.jar
+# HotwordEnrollment - from haydn V14.0.7.0.TKKMIXM
+product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk|8ade0dc8f37d68d7e7deaf162cf8badded474673
+product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk|ecb7a72da92f5fdbf8b842f6fd0043623f508f5e
+system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|99cfd80965c170f4885a7dd62c0eaad1a0c7840f
+system_ext/framework/com.android.hotwordenrollment.common.util.jar|9ad8db8e39c477fcc298f109ab39022c1970167e
 
 # IMS
 vendor/app/IWlanService/IWlanService.apk
