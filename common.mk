@@ -245,6 +245,10 @@ TARGET_COMMON_QTI_COMPONENTS := \
     wfd \
     wlan
 
+# Remove Packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # RIL
 PRODUCT_PACKAGES += \
 
